@@ -25,8 +25,6 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -50,18 +48,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyASa4phXGdokmKvKUzfrdpAebwPn9gXJig',
-    appId: '1:961883769025:android:9beecd1fd56abdf1b2ac40',
-    messagingSenderId: '961883769025',
+    apiKey: 'AIzaSyCn2bAH65OXgTlisNygOi-nQ8cd0iQM6Oc',
+    appId: '1:959638057912:android:9d8592340176f29969554d',
+    messagingSenderId: '959638057912',
     projectId: 'praktikum-pemmob',
     storageBucket: 'praktikum-pemmob.firebasestorage.app',
-  );
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAgvj5FQxBuGtGupBHADGo4OWa59LSxYuA',
-    appId: '1:961883769025:ios:bdff30ac57f940d9b2ac40',
-    messagingSenderId: '961883769025',
-    projectId: 'praktikum-pemmob',
-    storageBucket: 'praktikum-pemmob.firebasestorage.app',
-    iosBundleId: 'com.example.praktikum2Kevin',
   );
 }
